@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#10120f">
+  <meta name="description" content="Jordin Johns — Game Designer and Game Artist. Explore selected game design, 2D art, 3D art, and interactive projects.">
+  <title>JORDIN JOHNS // PLAYER SELECT</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="scanlines" aria-hidden="true"></div>
+  <header class="topbar">
+    <a class="brand" href="#home" aria-label="Jordin Johns home"><span class="brand-mark">JJ</span><span>JORDIN<span class="brand-muted">.EXE</span></span></a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav"><span class="sr-only">Toggle navigation</span><span></span><span></span><span></span></button>
+    <nav id="main-nav" class="main-nav" aria-label="Main navigation">
+      <a href="#world">WORLD MAP</a><a href="#missions">MISSIONS</a><a href="#loadout">LOADOUT</a><a href="#profile">PLAYER FILE</a><a class="nav-contact" href="#contact">CONTACT <span aria-hidden="true">↗</span></a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero section-shell" id="home" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="status-dot"></span> PORTFOLIO BUILD 2026.10 <span class="eyebrow-divider">/</span> PLAYER ONLINE</p>
+        <p class="pixel-label">PRESS START TO EXPLORE</p>
+        <h1 id="hero-title">JORDIN<br><span>JOHNS</span><span class="cursor" aria-hidden="true">_</span></h1>
+        <p class="hero-role">GAME DESIGNER <span>/</span> GAME ARTIST</p>
+        <p class="hero-description">Building immersive game experiences through gameplay systems, visual storytelling, and interactive worlds.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#world"><span aria-hidden="true">▶</span> START EXPLORING</a>
+          <a class="button button-quiet" href="#missions">VIEW MISSIONS <span aria-hidden="true">↓</span></a>
+        </div>
+        <div class="hero-stats" aria-label="Portfolio categories">
+          <div><span class="stat-number">01</span><span class="stat-label">GAME DESIGN</span></div>
+          <div><span class="stat-number">02</span><span class="stat-label">2D / 3D ART</span></div>
+          <div><span class="stat-number">03</span><span class="stat-label">UI / UX</span></div>
+        </div>
+      </div>
+      <div class="hero-screen" aria-label="Pixel-art inspired player profile panel">
+        <div class="screen-top"><span>PLAYER PROFILE</span><span class="screen-live">● LIVE</span></div>
+        <div class="avatar-stage">
+          <div class="pixel-sun" aria-hidden="true"></div>
+          <div class="pixel-mountain mountain-back" aria-hidden="true"></div>
+          <div class="pixel-mountain mountain-front" aria-hidden="true"></div>
+          <div class="pixel-avatar" aria-hidden="true"><span class="avatar-head"></span><span class="avatar-body"></span><span class="avatar-arm"></span></div>
+          <span class="stage-coordinate">KERALA, IN // 09°58'N</span>
+          <span class="stage-frame frame-a" aria-hidden="true"></span><span class="stage-frame frame-b" aria-hidden="true"></span>
+        </div>
+        <div class="screen-info">
+          <div><span class="micro-label">PLAYER ID</span><strong>JJ-2005</strong></div>
+          <div><span class="micro-label">CLASS</span><strong>CREATOR</strong></div>
+          <div><span class="micro-label">CURRENT QUEST</span><strong>MAKE SOMETHING PLAYABLE</strong></div>
+        </div>
+        <div class="screen-footer"><span>▲ EXPLORE THE MAP</span><span>V. 1.0.26</span></div>
+      </div>
+      <a class="scroll-cue" href="#world"><span class="scroll-line"></span> SCROLL TO LOAD WORLD</a>
+    </section>
+
+    <section class="section-shell world-section" id="world" aria-labelledby="world-title">
+      <div class="section-heading">
+        <div><p class="eyebrow">01 // NAVIGATION</p><h2 id="world-title">CHOOSE YOUR <span>WORLD</span></h2></div>
+        <p class="section-intro">Every destination opens another part of the work. Pick a zone to fast-travel, or use the standard navigation above.</p>
+      </div>
+      <div class="world-map">
+        <div class="map-grid" aria-hidden="true"></div>
+        <svg class="map-lines" viewBox="0 0 1000 500" preserveAspectRatio="none" aria-hidden="true">
+          <path d="M160 330 L300 190 L500 290 L710 150 L850 330" />
+          <path d="M300 190 L350 390 L500 290 L650 410 L850 330" />
+          <path d="M160 330 L350 390" />
+        </svg>
+        <a class="map-node node-home" href="#profile"><span class="node-icon">⌂</span><span class="node-name">PLAYER BASE</span><span class="node-sub">ABOUT / PROFILE</span></a>
+        <a class="map-node node-missions" href="#missions"><span class="node-icon">✦</span><span class="node-name">MISSION HUB</span><span class="node-sub">PROJECTS</span></a>
+        <a class="map-node node-art" href="#artwork"><span class="node-icon">▧</span><span class="node-name">ART DISTRICT</span><span class="node-sub">2D / 3D / UI</span></a>
+        <a class="map-node node-loadout" href="#loadout"><span class="node-icon">⚙</span><span class="node-name">LOADOUT LAB</span><span class="node-sub">TOOLS / SKILLS</span></a>
+        <a class="map-node node-contact" href="#contact"><span class="node-icon">↗</span><span class="node-name">COMMS TOWER</span><span class="node-sub">CONTACT</span></a>
+        <div class="map-compass" aria-hidden="true">N<br><span>▲</span></div>
+        <div class="map-coordinates" aria-hidden="true">WORLD 01 // CREATIVE TERRITORY</div>
+      </div>
+      <div class="map-hint"><span class="hint-icon">i</span> Select any location to travel. All areas are also available through the navigation menu.</div>
+    </section>
+
+    <section class="section-shell missions-section" id="missions" aria-labelledby="missions-title">
+      <div class="section-heading">
+        <div><p class="eyebrow">02 // SELECTED WORK</p><h2 id="missions-title">MISSION <span>SELECT</span></h2></div>
+        <p class="section-intro">A selection of game concepts, prototypes, and art work. Open a mission to see its brief, role, and development notes.</p>
+      </div>
+      <div class="filter-row" role="group" aria-label="Filter missions">
+        <button class="filter-button is-active" data-filter="all" aria-pressed="true">ALL MISSIONS <span>04</span></button>
+        <button class="filter-button" data-filter="design" aria-pressed="false">GAME DESIGN</button>
+        <button class="filter-button" data-filter="art" aria-pressed="false">ART / UI</button>
+        <button class="filter-button" data-filter="prototype" aria-pressed="false">PROTOTYPES</button>
+      </div>
+      <div class="mission-grid">
+        <article class="mission-card mission-featured" data-category="design prototype">
+          <a class="mission-image image-placeholder placeholder-impale" href="projects/impale.html" aria-label="Open Impale mission details">
+            <span class="placeholder-label">REPLACE WITH YOUR GAMEPLAY SCREENSHOT</span><span class="placeholder-scene scene-lava" aria-hidden="true"></span><span class="image-corner">M-001</span><span class="image-open">↗</span>
+          </a>
+          <div class="mission-meta"><span>MISSION 001</span><span class="tag">UNREAL ENGINE 5.6</span></div>
+          <h3><a href="projects/impale.html">IMPALE</a></h3>
+          <p>A first-person platforming experience where falling nails destroy the paths beneath the player. Survive the hazards, activate two objectives, and reach the final portal.</p>
+          <a class="text-link" href="projects/impale.html">OPEN MISSION FILE <span>→</span></a>
+        </article>
+        <article class="mission-card" data-category="design">
+          <a class="mission-image image-placeholder placeholder-rideon" href="projects/rideon.html" aria-label="Open Bike Ride Simulator mission details">
+            <span class="placeholder-label">REPLACE WITH YOUR BIKE / WORLD ART</span><span class="placeholder-scene scene-road" aria-hidden="true"></span><span class="image-corner">M-002</span><span class="image-open">↗</span>
+          </a>
+          <div class="mission-meta"><span>MISSION 002</span><span class="tag">GAME CONCEPT</span></div>
+          <h3><a href="projects/rideon.html">BIKE RIDE SIMULATOR</a></h3>
+          <p>A co-op journey concept focused on riding, exploration, photography, navigation, and collecting souvenirs along the way.</p>
+          <a class="text-link" href="projects/rideon.html">OPEN MISSION FILE <span>→</span></a>
+        </article>
+        <article class="mission-card" data-category="design prototype">
+          <a class="mission-image image-placeholder placeholder-flipside" href="projects/flipside.html" aria-label="Open Flipside mission details">
+            <span class="placeholder-label">REPLACE WITH YOUR PUZZLE LEVEL ART</span><span class="placeholder-scene scene-flip" aria-hidden="true"></span><span class="image-corner">M-003</span><span class="image-open">↗</span>
+          </a>
+          <div class="mission-meta"><span>MISSION 003</span><span class="tag">UNREAL ENGINE</span></div>
+          <h3><a href="projects/flipside.html">FLIPSIDE</a></h3>
+          <p>A puzzle-platformer concept built around gravity switching, turning walls and ceilings into routes through a layered escape-room environment.</p>
+          <a class="text-link" href="projects/flipside.html">OPEN MISSION FILE <span>→</span></a>
+        </article>
+        <article class="mission-card" data-category="art">
+          <a class="mission-image image-placeholder placeholder-projectdn" href="projects/project-dn.html" aria-label="Open Project DN mission details">
+            <span class="placeholder-label">ADD APPROVED PROJECT DN ARTWORK</span><span class="placeholder-scene scene-pixels" aria-hidden="true"></span><span class="image-corner">M-004</span><span class="image-open">↗</span>
+          </a>
+          <div class="mission-meta"><span>MISSION 004</span><span class="tag">2D ART / UI</span></div>
+          <h3><a href="projects/project-dn.html">PROJECT DN</a></h3>
+          <p>Selected 2D game assets, illustrations, and UI work created during a short 2026 role at DynamicNXT. Add only approved work samples.</p>
+          <a class="text-link" href="projects/project-dn.html">OPEN MISSION FILE <span>→</span></a>
+        </article>
+      </div>
+      <p class="content-note"><span aria-hidden="true">!</span> Project summaries are based on your existing portfolio and resume. Add screenshots, videos, and further details only where you have material to share.</p>
+    </section>
+
+    <section class="artwork-section" id="artwork" aria-labelledby="artwork-title">
+      <div class="section-shell">
+        <div class="section-heading">
+          <div><p class="eyebrow">03 // VISUAL ARCHIVE</p><h2 id="artwork-title">ART <span>INVENTORY</span></h2></div>
+          <p class="section-intro">A space for 2D illustrations, 3D assets, and interface experiments. Replace the framed slots with your own work.</p>
+        </div>
+        <div class="art-grid">
+          <div class="art-slot art-large"><div class="art-placeholder"><span>01 / 2D ART</span><span class="art-glyph">▧</span><small>DROP YOUR ILLUSTRATION HERE</small></div><div class="art-caption"><strong>2D ART & ILLUSTRATION</strong><span>CHARACTER / PAINTING / VISUALS</span></div></div>
+          <div class="art-slot"><div class="art-placeholder art-purple"><span>02 / 3D ART</span><span class="art-glyph">◈</span><small>DROP YOUR 3D RENDER HERE</small></div><div class="art-caption"><strong>3D ASSETS</strong><span>MODELING / MATERIALS</span></div></div>
+          <div class="art-slot"><div class="art-placeholder art-green"><span>03 / UI-UX</span><span class="art-glyph">▦</span><small>DROP YOUR UI SCREEN HERE</small></div><div class="art-caption"><strong>UI / UX DESIGN</strong><span>HUD / WIREFRAMES / FLOWS</span></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-shell loadout-section" id="loadout" aria-labelledby="loadout-title">
+      <div class="section-heading">
+        <div><p class="eyebrow">04 // EQUIPMENT</p><h2 id="loadout-title">SKILL <span>LOADOUT</span></h2></div>
+        <p class="section-intro">Tools and disciplines from your portfolio and resume. The meters are visual labels, not claimed proficiency scores.</p>
+      </div>
+      <div class="loadout-panel">
+        <div class="loadout-sidebar"><div class="loadout-emblem">JJ<span>+</span></div><p class="micro-label">CURRENT BUILD</p><h3>GAME<br>CREATOR</h3><p>Designing player experiences, shaping visuals, and prototyping interactive ideas.</p><div class="loadout-status"><span class="status-dot"></span> EQUIPMENT SYNCED</div></div>
+        <div class="loadout-content">
+          <div class="skill-group"><div class="skill-group-title"><span>01</span> GAME DESIGN</div><div class="skill-chips"><span>Gameplay Design</span><span>Level Design</span><span>Rapid Prototyping</span><span>Player Experience</span></div></div>
+          <div class="skill-group"><div class="skill-group-title"><span>02</span> GAME ENGINES</div><div class="skill-chips"><span>Unreal Engine 5</span><span>Unity</span><span>Blueprints</span></div></div>
+          <div class="skill-group"><div class="skill-group-title"><span>03</span> ART & PRODUCTION</div><div class="skill-chips"><span>Adobe Photoshop</span><span>Autodesk Maya</span><span>Substance Painter</span><span>Marmoset Toolbag</span><span>2D Art</span><span>3D Asset Creation</span></div></div>
+          <div class="skill-group"><div class="skill-group-title"><span>04</span> UI / UX</div><div class="skill-chips"><span>UI Design</span><span>Wireframing</span><span>Visual Design</span></div></div>
+          <p class="small-note">Skills listed are drawn from existing portfolio/resume content. Add or remove tools to match your current experience.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-shell profile-section" id="profile" aria-labelledby="profile-title">
+      <div class="section-heading">
+        <div><p class="eyebrow">05 // PLAYER FILE</p><h2 id="profile-title">BEHIND THE <span>CONTROLLER</span></h2></div>
+      </div>
+      <div class="profile-grid">
+        <div class="profile-copy"><p class="profile-lead">I'm Jordin Johns — a game design student interested in building engaging player experiences through gameplay, art, and visual design.</p><p>This portfolio brings together selected concepts, prototypes, and visual work developed through study and creative practice. Each project is an opportunity to test an idea, learn a system, and make something people can interact with.</p><div class="profile-actions"><a class="button button-primary" href="https://jordinjain6.wixstudio.com/portfolio" target="_blank" rel="noreferrer">ORIGINAL PORTFOLIO ↗</a><a class="button button-quiet" href="#contact">GET IN TOUCH ↓</a></div></div>
+        <div class="profile-dossier">
+          <div class="dossier-header"><span>PLAYER DOSSIER</span><span>FILE // JJ-01</span></div>
+          <div class="dossier-row"><span>NAME</span><strong>JORDIN JOHNS</strong></div>
+          <div class="dossier-row"><span>FOCUS</span><strong>GAME DESIGN / GAME ART</strong></div>
+          <div class="dossier-row"><span>EDUCATION</span><strong>BACHELOR OF DESIGN</strong></div>
+          <div class="dossier-row"><span>INSTITUTION</span><strong>JAIN DEEMED-TO-BE UNIVERSITY, KOCHI</strong></div>
+          <div class="dossier-row"><span>GRADUATION</span><strong>2027</strong></div>
+          <div class="dossier-footer"><span class="status-dot"></span> PROFILE AVAILABLE FOR REVIEW</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contact" aria-labelledby="contact-title">
+      <div class="section-shell contact-inner">
+        <p class="eyebrow">06 // COMMS TOWER</p><h2 id="contact-title">READY FOR THE<br><span>NEXT QUEST?</span></h2>
+        <p>Have a project, collaboration, or opportunity in mind? Let's connect.</p>
+        <div class="contact-actions"><a class="button button-primary" href="mailto:jordin.jain@gmail.com">SEND TRANSMISSION ↗</a><a class="button button-quiet" href="https://linkedin.com/in/jordin-johns2005" target="_blank" rel="noreferrer">LINKEDIN ↗</a></div>
+        <p class="contact-email">jordin.jain@gmail.com</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><a class="brand" href="#home"><span class="brand-mark">JJ</span><span>JORDIN<span class="brand-muted">.EXE</span></span></a><span>BUILT WITH CURIOSITY <span class="footer-star">✦</span></span><a href="#home">BACK TO TOP ↑</a></footer>
+  <div class="toast" role="status" aria-live="polite" hidden></div>
+</body>
+</html>
